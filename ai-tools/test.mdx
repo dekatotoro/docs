@@ -3,6 +3,11 @@ title: "test"
 description: "Description of your new file."
 ---
 
-Network
+```mermaid
+stateDiagram-v2
+    [*] --> Idle
+    Idle --> Running : start()
+    Running --> Idle : stop()
+```
 
 ![test.png](/images/test.png)
