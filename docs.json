@@ -44,6 +44,15 @@
               "ai-tools/claude-code",
               "ai-tools/windsurf"
             ]
+          },
+          {
+            "group": "Sample Docs",
+            "pages": [
+              "sample-docs/test1",
+              "sample-docs/test2",
+              "sample-docs/test3",
+              "sample-docs/test4"
+            ]
           }
         ]
       },
