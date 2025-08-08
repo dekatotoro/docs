@@ -8,6 +8,8 @@ mode: "wide"
 
 #### test image
 
+test
+
 ![image.png](/images/image.png)
 
 ```plantuml
@@ -17,4 +19,20 @@ participant "gateway" as gw
 cli -> gw
 gw -> cli
 @enduml
+```
+
+```mermaid
+sequenceDiagram
+    participant ユーザー
+    participant ブラウザ
+    participant データベース
+    ユーザー->>ブラウザ:ログインする
+    ブラウザ->>データベース:ログイン処理
+    データベース-->>ブラウザ:レスポンス
+
+    alt ログイン成功
+        ブラウザ->>ユーザー:ホーム
+    else　ログイン失敗
+        ブラウザ->>ユーザー:エラー画面
+    end
 ```
